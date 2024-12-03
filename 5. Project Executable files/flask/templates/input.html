@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Welcome</title>
+     <meta charset="utf-8">
+     <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+     <title>Welcome</title>
+     <meta content="" name="description">
+     <meta content="" name="keywords">
+
+     <!-- Favicons -->
+     <link href="static/img/favicon.png" rel="icon">
+     <link href="static/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+     <!-- Google Fonts -->
+     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+     <!-- Vendor CSS Files -->
+     <link href="static/vendor/aos/aos.css" rel="stylesheet">
+     <link href="static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+     <link href="static/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+     <link href="static/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+     <link href="static/vendor/remixicon/remixicon.css" rel="stylesheet">
+     <link href="static/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+     <!-- Template Main CSS File -->
+     <link href="static/css/style.css" rel="stylesheet">
+    <!-- Your CSS styles -->
+    <style>
+        /* Center-align the container */
+        .container {
+            text-align: center;
+            margin-top: 20%; /* Adjust the margin-top as needed */
+        }
+        
+        /* Style inputs with type="text", select elements and textareas */
+        input[type=text], input[type=number], select, textarea {
+            width: 100%; /* Full width */
+            padding: 12px; /* Some padding */ 
+            border: 1px solid #ccc; /* Gray border */
+            border-radius: 4px; /* Rounded borders */
+            box-sizing: border-box; /* Make sure that padding and width stays in place */
+            margin-top: 6px; /* Add a top margin */
+            margin-bottom: 16px; /* Bottom margin */
+            resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+        }
+
+        /* Style the submit button with a specific background color etc */
+        input[type=submit] {
+            background-color: #04AA6D;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        /* When moving the mouse over the submit button, add a darker green color */
+        input[type=submit]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+ <section id="hero" class="hero d-flex align-items-center">
+<header id="header" class="header fixed-top">
+  <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+
+    <a href="index.html" class="logo d-flex align-items-center">
+      <img src="static/img/logo.png" alt="">
+      <span>MindScope</span>
+    </a>
+
+    <nav id="navbar" class="navbar">
+      <ul>
+        <li><a class="nav-link scrollto active" href="/">Return to Home Page</a></li>
+            
+      </ul>
+      <i class="bi bi-list mobile-nav-toggle"></i>
+    </nav><!-- .navbar -->
+
+  </div>
+</header>
+
+
+<div class="container">
+
+    <form action="/submit" method="post">
+        <label for="textInput"><b>Enter your text<b></label>
+        <input type="text" id="textInput" name="userInput" class="form-input" placeholder="Type something...">
+        <input type="submit" value="Submit">
+        <br>
+             <br>
+        <div class="row">
+            <div class="col-lg-6">
+                <img src="static/img/word.jpg" class="img-fluid" alt="Left Image">
+            </div>
+            <div class="col-lg-6">
+                <img src="static/img/word2.jpg" class="img-fluid" alt="Right Image">
+            </div>
+        </div>
+
+         
+    </form>
+    
+</div>
+
+</body>
+</html>
